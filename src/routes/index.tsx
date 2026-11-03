@@ -3,7 +3,7 @@ import {
   Flame, Clock, PlugZap, CloudRain, Sun, Zap, ScanEye, Cpu, Droplets, ShieldAlert,
   Github, Play, Battery, Radar, ToggleRight, Code2, FileCode, Paintbrush, Braces, Users,
 } from "lucide-react";
-import hero from "@/assets/hero-port.jpg";
+import emblema from "@/assets/porto-sem-listra.png.asset.json";
 import maquete from "@/assets/maquete.jpg";
 
 export const Route = createFileRoute("/")({
@@ -65,11 +65,14 @@ function Index() {
   return (
     <main className="min-h-screen bg-background font-sans text-foreground">
       {/* Hero */}
-      <section className="relative flex min-h-[92vh] items-center overflow-hidden">
-        <img src={hero} alt="Porto com painéis solares ao pôr do sol" width={1600} height={1008} className="absolute inset-0 h-full w-full object-cover" />
+      <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-background">
         <div className="absolute inset-0 bg-hero-overlay" />
-        <div className="relative mx-auto w-full max-w-6xl px-6 py-24">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs font-medium backdrop-blur">
+        <div className="relative mx-auto flex w-full max-w-3xl flex-col items-center px-6 py-24 text-center">
+          <div className="relative flex justify-center">
+            <div className="absolute top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-solar opacity-25 blur-3xl" />
+            <img src={emblema.url} alt="Emblema Porto Seguro Solar — âncora, sol e contêineres" width={508} height={491} className="relative h-44 w-auto drop-shadow-2xl md:h-56" />
+          </div>
+          <span className="mt-8 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs font-medium backdrop-blur">
             <Sun className="h-3.5 w-3.5 text-primary" /> Projeto Escola Técnica Adélia
           </span>
           <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] md:text-7xl">
