@@ -3,7 +3,7 @@ import {
   Flame, Clock, PlugZap, CloudRain, Sun, Zap, ScanEye, Cpu, Droplets, ShieldAlert,
   Github, Play, Battery, Radar, ToggleRight, Code2, FileCode, Paintbrush, Braces, Users,
 } from "lucide-react";
-import hero from "@/assets/hero-port.jpg";
+import emblema from "@/assets/porto-sem-listra.png.asset.json";
 import maquete from "@/assets/maquete.jpg";
 
 export const Route = createFileRoute("/")({
