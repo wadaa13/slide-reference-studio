@@ -69,8 +69,8 @@ function Index() {
         <div className="absolute inset-0 bg-hero-overlay" />
         <div className="relative mx-auto flex w-full max-w-3xl flex-col items-center px-6 py-24 text-center">
           <div className="relative flex justify-center">
-            <div className="absolute top-1/2 -z-10 h-72 w-72 -translate-y-1/2 rounded-full bg-solar opacity-25 blur-3xl" />
-            <img src={emblema.url} alt="Emblema Porto Seguro Solar — âncora, sol e contêineres" width={508} height={491} className="h-44 w-auto drop-shadow-2xl md:h-56" />
+            <div className="absolute top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-solar opacity-25 blur-3xl" />
+            <img src={emblema.url} alt="Emblema Porto Seguro Solar — âncora, sol e contêineres" width={508} height={491} className="relative h-44 w-auto drop-shadow-2xl md:h-56" />
           </div>
           <span className="mt-8 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs font-medium backdrop-blur">
             <Sun className="h-3.5 w-3.5 text-primary" /> Projeto Escola Técnica Adélia
