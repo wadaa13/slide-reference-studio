@@ -108,7 +108,7 @@ function Index() {
         <p className="group-names">Kassyane Yumi · Grazielli Fonseca</p><p className="school-name">Escola Técnica Adélia</p>
         <div className="social-links">
           <Button variant="outline" size="lg" disabled aria-label="LinkedIn de Kassyane Yumi — link pendente"><Linkedin /> Kassyane Yumi</Button>
-          <Button variant="outline" size="lg" disabled aria-label="LinkedIn de Grazielli Fonseca — link pendente"><Linkedin /> Grazielli Fonseca</Button>
+          <Button asChild variant="outline" size="lg"><a href="https://www.linkedin.com/in/grazielli-fonseca/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Grazielli Fonseca"><Linkedin /> Grazielli Fonseca</a></Button>
         </div>
         <p className="copyright">© {new Date().getFullYear()} Porto Seguro Solar</p>
       </footer>
