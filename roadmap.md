@@ -3,4 +3,4 @@
 - [x] Replace the gallery photo and add the uploaded simulation video.
 - [x] Remove GitHub and display two LinkedIn buttons.
 - [x] Activate Grazielli's LinkedIn link.
-- [ ] Activate Kassyane's LinkedIn link — awaiting her profile URL.
+- [x] Activate Kassyane's LinkedIn link.
