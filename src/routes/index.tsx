@@ -3,10 +3,11 @@ import {
   Flame, Clock, PlugZap, CloudRain, Sun, Zap, ScanEye, Cpu, Droplets, ShieldAlert,
   Linkedin, Battery, Radar, ToggleRight, Code2, FileCode, Paintbrush, Braces, Users,
 } from "lucide-react";
-import emblema from "@/assets/porto-sem-listra.png.asset.json";
-import maquete from "@/assets/maquete-real.jpeg.asset.json";
-import simulacao from "@/assets/simulacao-porto.mp4.asset.json";
 import { Button } from "@/components/ui/button";
+
+const EMBLEMA = "/porto-sem-listra.png";
+const MAQUETE = "/maquete-real.jpeg";
+const SIMULACAO = "/simulacao-porto.mp4";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -62,7 +63,7 @@ function Index() {
     <main className="site">
       <section className="intro">
         <div className="intro-content">
-          <img src={emblema.url} alt="Emblema Porto Seguro Solar — âncora, sol e contêineres" width={508} height={491} className="emblem" />
+          <img src={EMBLEMA} alt="Emblema Porto Seguro Solar — âncora, sol e contêineres" width={508} height={491} className="emblem" />
           <span className="project-label"><Sun /> Projeto Escola Técnica Adélia</span>
           <h1>Porto Seguro <span className="solar-text">Solar</span></h1>
           <p className="intro-description">Sistema Inteligente, Sustentável e Off-Grid para Combate a Incêndios Portuários.</p>
@@ -92,8 +93,8 @@ function Index() {
       <section className="section container">
         <SectionTitle eyebrow="Protótipo" title="Galeria e Demonstração da Maquete" />
         <div className="gallery-grid">
-          <figure className="gallery-item"><img src={maquete.url} alt="Maquete real do Porto Seguro Solar com cais, contêineres, painel solar e sistema de combate a incêndio" loading="lazy" width={1025} height={768} /><figcaption>Maquete Porto Seguro Solar</figcaption></figure>
-          <figure className="gallery-item"><video controls playsInline preload="metadata" aria-label="Vídeo da simulação do Porto Seguro Solar"><source src={simulacao.url} type="video/mp4" />Seu navegador não suporta a reprodução deste vídeo.</video><figcaption>Vídeo da simulação</figcaption></figure>
+          <figure className="gallery-item"><img src={MAQUETE} alt="Maquete real do Porto Seguro Solar com cais, contêineres, painel solar e sistema de combate a incêndio" loading="lazy" width={1025} height={768} /><figcaption>Maquete Porto Seguro Solar</figcaption></figure>
+          <figure className="gallery-item"><video controls playsInline preload="metadata" aria-label="Vídeo da simulação do Porto Seguro Solar"><source src={SIMULACAO} type="video/mp4" />Seu navegador não suporta a reprodução deste vídeo.</video><figcaption>Vídeo da simulação</figcaption></figure>
         </div>
       </section>
       <section className="section section-band">

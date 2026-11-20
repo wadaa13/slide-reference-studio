@@ -10,4 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Style rendered pages and the shared Button with semantic classes in plain global CSS; the site no longer depends on Tailwind-generated utilities for its visible interface.
-- Reference uploaded gallery media through CDN asset pointers and serve simulation videos as fast-start H.264 MP4 for browser playback.
+- Keep site photos and videos as files in `public/`, referenced by root-relative paths (e.g. `/maquete-real.jpeg`); serve simulation videos as fast-start H.264 MP4 for browser playback.
